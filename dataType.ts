@@ -31,11 +31,17 @@ let arr2: [number, boolean] = [1, true];
 
 // 枚举
 enum Color {Red, Green, Blue}
-let color: Color = Color.Red;
-console.log('color:', color);
+let color1: Color = Color.Red;
+console.log('color1:', color1);
+let color2: Color = Color.Green;
+console.log('color2:', color2);
+let color3: Color = Color.Blue;
+console.log('color3:', color3);
 
 // void
 function fn (): void {
     console.log('void')
 }
+let rn:void = fn();
+console.log('rn:', rn);
 

@@ -29,9 +29,16 @@ var Color;
     Color[Color["Green"] = 1] = "Green";
     Color[Color["Blue"] = 2] = "Blue";
 })(Color || (Color = {}));
-var color = Color.Red;
-console.log('color:', color);
+var color1 = Color.Red;
+console.log('color1:', color1);
+var color2 = Color.Green;
+console.log('color2:', color2);
+var color3 = Color.Blue;
+console.log('color3:', color3);
 // void
 function fn() {
     console.log('void');
 }
+var rn = fn();
+console.log('rn:', rn);
+//# sourceMappingURL=datatype.js.map
