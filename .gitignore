@@ -17,4 +17,5 @@ selenium-debug.log
 *.sln
 *.md
 *.map
+*.js
 package-lock.json
