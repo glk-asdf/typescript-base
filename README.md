@@ -8,6 +8,12 @@
 
 2. typescript 可处理已有的 javascript 代码，并只对其中的 typescript 代码进行编译
 
+## 注释
+
+* 单行注释（//）
+
+* 多行注释（/* */）
+
 ## tsc
 
 > 使用 tsc 命令将 .ts 文件转为 .js 文件
@@ -20,8 +26,10 @@
     
     * --watch 监视模式
 
-## 注释
+## deno
 
-* 单行注释（//）
+> deno 是 node 的替代品，支持 Typescript，会使用 tsc 引擎转为 js，再使用 v8 引擎运行 js
 
-* 多行注释（/* */）
+1. 运行
+    
+    * deno run xxx.ts
