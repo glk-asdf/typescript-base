@@ -20,9 +20,9 @@ let v2: number;
 let v3 = 3;
 let v4;
 console.log('v1:', v1);
-console.log('v2:', v2);
+// console.log('v2:', v2);
 console.log('v3:', v3);
-console.log('v4:', v4);
+// console.log('v4:', v4);
 
 /*
     当 S 类型是 N 类型的子集，或 N 是 S 类型的子集，则可以断言成功
@@ -50,7 +50,21 @@ console.log('num:', num);
         全局作用域
             全局变量定义在程序外部，可以在代码的任意位置使用
         类作用域
-            类的字段，类变量声明在类中，可以通过类实例化的对象来访问，静态类变量也可以通过类直接访问
+            类的字段，类变量声明在类中（方法的外面），可以通过类实例化的对象来访问，静态类变量也可以通过类直接访问
         局部变量
             局部变量只能在声明它的代码块中使用
  */
+let global_num = 1;
+class Numbers {
+    class_num = 2;
+    static class_s_num = 3;
+    storeNum(): void {
+        let local_num = 4;
+        console.log('local_num:', local_num)
+    }
+}
+console.log('global_num:', global_num);
+console.log('class_s_num:', Numbers.class_s_num);
+let numbers: Numbers = new Numbers();
+console.log('class_num:', numbers.class_num);
+numbers.storeNum();
