@@ -25,6 +25,14 @@
     * --sourcemap 编译参数生成 .map 文件
     
     * --watch 监视模式
+    
+    * --out 编译多个文件并合并到一个输出的文件
+    ~~~
+    tsc --out app.js dataType.ts dataType2.ts dataType3.ts
+    ~~~
+    
+3.  tsc 会将 ts 文件以及引入的 ts 文件各自转为 js 文件，无法执行   
+    需要使用 --out app.js 生成一个文件，才可以执行
 
 ## deno
 
