@@ -14,12 +14,16 @@
 interface IPersion {
     firstName: string,
     lastName: string,
-    sayHi: () => string
+    sayHi: () => string,
+    sayHi2(),
+    sayHi3(): void
 }
 let customer: IPersion = {
     firstName: 'Tom',
     lastName: 'Hanks',
-    sayHi: (): string => 'hi there'
+    sayHi: (): string => 'hi there',
+    sayHi2() {},
+    sayHi3() {}
 }
 console.log('customer:', customer);
 
