@@ -45,5 +45,26 @@ interface Person {
     age: number
 }
 interface Musician extends Person {
-
+    instrument: string
 }
+
+let drummer = <Musician>{};
+drummer.age = 27;
+drummer.instrument = 'Drums';
+console.log('drummer:', drummer);
+
+// 多继承
+interface Person2 {
+    name: string
+}
+interface Person3 extends Person, Person2 {
+    sex: string
+}
+
+let xiaoming: Person3 = {
+    age: 18,
+    name: 'xiaoming',
+    sex: 'man'
+}
+console.log('xiaoming:', xiaoming);
+
