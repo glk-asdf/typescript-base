@@ -21,7 +21,8 @@
 namespace SomeNameSpaceName {
     export interface SomeInterfaceName {}
     export class SomeClassName {}
-    let a: string = 'hello'
+    let a: string = 'hello';
+    console.log('a in namespace:', a);
     export function disp (): void {
         console.log('a:', a)
     }
