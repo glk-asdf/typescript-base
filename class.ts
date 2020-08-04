@@ -33,6 +33,7 @@
             private 私有，只能被其定义所在的类访问
     类和接口
         类可以实现接口，使用关键字 implements
+    实例对象可以以父级或父接口为类型指定，但不能使用父级或父接口以外的属性或方法
  */
 
 // 实例
@@ -180,4 +181,5 @@ class AgriLoan implements ILoan {
     }
 }
 let agr: AgriLoan = new AgriLoan(10, 1);
+// let agr: ILoan = new AgriLoan(10, 1);        // TS2339 [ERROR]: Property 'disp' does not exist on type 'ILoan'.
 agr.disp();
