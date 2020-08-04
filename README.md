@@ -31,6 +31,12 @@
     tsc --out app.js dataType.ts dataType2.ts dataType3.ts
     ~~~
     
+    * --module amd 以 amd 模式编译，默认按 commonjs 模式编译
+    ~~~
+    tsc --module amd testShape.ts
+    tsc testShape.ts                // 相当于 tsc --module commonjs testShape.ts
+    ~~~
+    
 3.  tsc 会将 ts 文件以及引入的 ts 文件各自转为 js 文件，无法执行   
     需要使用 --out app.js 生成一个文件，才可以执行
 
